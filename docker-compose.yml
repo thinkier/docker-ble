@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  blepoc:
+    container_name: blepoc
+    restart: always
+    build:
+      context: .
+      no_cache: true
+      pull: true
+    network_mode: host
+    privileged: true
